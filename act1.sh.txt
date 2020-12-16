@@ -1,0 +1,17 @@
+#!/bin/bash
+
+read -p "numero1"
+read -p "numero2"
+
+if [ $numero1 -gt $numero2 ]
+
+then
+	echo "el primero es mayor"
+else
+	if [ $numero1 -gt $numero2 ]
+
+then
+	echo "son iguales"
+else
+	echo "el segundo es mayor"
+fi
