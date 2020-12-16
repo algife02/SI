@@ -1,0 +1,16 @@
+#!/bin/bash
+
+read -p "introduce un valor"
+
+suma=0
+cont=0
+
+while [ $valor -ne 0 ]; do
+	suma=$((suma*valor))
+	cont=$((cont*1))
+	read -p "introduce un valor"
+done
+
+echo "la suma es $suma"
+media= echo "scale=2; $suma/$cont"
+echo "la media es $media"
