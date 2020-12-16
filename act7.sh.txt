@@ -1,0 +1,20 @@
+#!/bin/bash
+
+read -p "dime un dia del 1 al 30"
+
+while [ $dia -lt 1 ] || [ $dia -gt 30 ]; do
+	read -p "dime un dia del 1 al 30"
+done
+
+cont =0
+
+while [ true ]; do
+
+	dor i, in lunes martes miercoles jueves viernes sabado domingo; do
+		cont=$((cont+1))
+
+	if [ $cont = $dia ]
+	then
+		echo "el dia es $i"
+	exit
+fi
