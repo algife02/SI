@@ -1,0 +1,22 @@
+#!/bin/bash
+
+read -p "cuantos litros de agua?"
+
+while [ $litros -le 0 ]; do
+	read -p " cuantos litros de agua?";
+done
+
+if [$litros -le 50 ]
+then
+	euros = 20
+else
+if [ $litros -le 200 ]
+then
+	resto= $((litros-50))
+	euros= echo "sclale=2; $resto*0.2+20";
+else
+	resto= $((litros-200))
+	euros= echo "sclale=2; $resto*0.1+50";
+fi
+
+echo "coste total; $euros"
